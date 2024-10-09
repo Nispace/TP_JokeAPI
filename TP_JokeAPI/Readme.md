@@ -19,4 +19,4 @@ L'application JokeAPI vous permet d'ajouter, d'afficher et de supprimer des blag
 
 1. **Clonez le dépôt**
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/Nispace/TP_JokeAPI
