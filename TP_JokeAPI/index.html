@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke API App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5 p-4 bg-dark text-white rounded shadow-lg">
+        <h1 class="mb-4 text-center text-uppercase">JokeAPI</h1>
+
+        <!-- Formulaire pour ajouter une blague -->
+        <form id="joke-form" class="mb-4">
+            <div class="input-group mb-3">
+                <input type="text" id="manual-joke" class="form-control" placeholder="Entrez votre blague ici" required>
+                <button class="btn btn-success" type="submit">Ajouter la blague</button>
+            </div>
+        </form>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-between mb-4">
+            <button id="get-joke" class="btn btn-primary w-50 me-2">Obtenir une blague</button>
+            <button id="clear-table" class="btn btn-danger w-50 ms-2">Vider le tableau</button>
+        </div>
+
+        <!-- Tableau des blagues -->
+        <div class="table-responsive">
+            <table class="table table-dark table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Blague</th>
+                        <th>Catégorie</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="joke-table">
+                    <!-- Les blagues s'ajoutent ici -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
